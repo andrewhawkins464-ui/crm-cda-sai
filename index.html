@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c3b62" />
+    <title>CRM | CDA Control Autos SAI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark">CA<span>+</span></div>
+          <div><strong>CONTROL AUTOS</strong><small>San Andrés · CRM</small></div>
+        </div>
+        <div class="prototype-label">PROTOTIPO ACADÉMICO</div>
+        <nav class="nav-list" aria-label="Navegación principal">
+          <button class="nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span>Resumen</button>
+          <button class="nav-item" data-view="clients"><span class="nav-icon">♙</span>Clientes</button>
+          <button class="nav-item" data-view="vehicles"><span class="nav-icon">▣</span>Vehículos / RTM</button>
+          <button class="nav-item" data-view="followups"><span class="nav-icon">↗</span>Seguimiento</button>
+          <button class="nav-item" data-view="pqr"><span class="nav-icon">▤</span>PQR</button>
+          <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span>Configuración</button>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot"></span><div><strong>Modo demostración</strong><small>Solo datos ficticios</small></div></div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú">☰</button>
+          <div class="breadcrumb"><span>CRM</span><b>/</b><strong id="breadcrumbTitle">Resumen</strong></div>
+          <div class="top-actions">
+            <div class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Buscar cliente, placa o identificación..." /></div>
+            <button class="icon-button" title="Notificaciones">♢<i></i></button>
+            <div class="user-chip"><div class="avatar">AD</div><div><strong>Administrador</strong><small>Acceso local</small></div><span>⌄</span></div>
+          </div>
+        </header>
+        <div class="content" id="content"></div>
+        <footer>Prototipo CRM — CDA Control Autos SAI <span>•</span> Propuesta de mejoramiento administrativo · Datos ficticios</footer>
+      </main>
+    </div>
+    <div id="modalRoot"></div>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

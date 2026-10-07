@@ -1,0 +1,9 @@
+{
+  "name": "crm-cda-control-autos-sai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototipo académico CRM para CDA Control Autos SAI",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
